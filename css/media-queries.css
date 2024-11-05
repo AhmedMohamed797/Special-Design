@@ -1,0 +1,184 @@
+/* ============================= Start Grid System ============================= */
+
+/* Small Screens */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Desktop Devices */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* ============================= Start Toggle Menu ============================= */
+
+@media (max-width:991px) {
+
+  .header-area .links {
+    display: none;
+
+  }
+
+  .header-area .links.open::before {
+    content: '';
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    top: -20px;
+    right: 13px;
+    border-color: transparent transparent #fff transparent;
+  }
+
+  .header-area .links.open {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: left;
+  }
+
+  .header-area .links.open li {
+    display: block;
+    margin: 10px;
+  }
+
+  .header-area .links.open li a {
+    color: var(--main-color);
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+    padding: 2px;
+  }
+
+  .header-area .links.open li:hover a {
+    background-color: rgba(238, 238, 238, 0.6);
+  }
+
+  .header-area .bars {
+    display: block;
+  }
+
+}
+
+/* ============================= Start Landing Page ============================= */
+
+@media (max-width: 575px) {
+
+  .introduction-text h1 {
+    font-size: 25px;
+  }
+
+}
+
+/* ============================= Start About Us ============================= */
+
+
+@media (max-width: 767px) {
+  .about-us {
+    display: block;
+    text-align: center;
+  }
+
+  .about-us .info-box {
+    padding: 0 !important;
+  }
+}
+
+/* ============================= Start Our Skills ============================= */
+
+
+@media (max-width: 767px) {
+
+  .skills .skill-box {
+    display: block;
+  }
+
+  .skills .skill-box .skill-name {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .skills .skill-box .skill-progress {
+    width: 100%;
+  }
+
+}
+
+/* ============================= Start Timeline ============================= */
+
+@media (max-width: 767px) {
+
+  .timeline .timeline-content .left,
+  .timeline .timeline-content .right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .timeline .timeline-content .left::before,
+  .timeline .timeline-content .right::before {
+    display: none;
+  }
+
+  .timeline .timeline-content .left .content::before,
+  .timeline .timeline-content .right .content::before {
+    display: none;
+  }
+}
+
+/* ============================= Start Feature ============================= */
+
+@media (max-width: 991px) {
+  .features .feet-box {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 575px) {
+  .features .feet-box {
+    width: 100%;
+  }
+}
+
+/* ============================= Start Testimonals ============================= */
+
+@media (max-width: 991px) {
+  .testimonals .ts-box {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+}
+
+/* ============================= Start Contact Us ============================= */
+
+@media (max-width: 767px) {
+
+  .contact form .left,
+  .contact form .right {
+    float: none;
+    width: 100%;
+  }
+}
